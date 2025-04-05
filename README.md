@@ -22,7 +22,6 @@ como administrativas (registro de productos, Eliminar producto, etc.).
 - 📋 Registro, edición y eliminación de productos.
 - 📦 Gestión de inventario (stock disponible, categorías).
 - 📨 Sección de contacto para que los clientes se comuniquen.
-- 🕐 Horarios de atención y ubicación de la panadería.
 
 ## 📥 Clonar el Repositorio
 
