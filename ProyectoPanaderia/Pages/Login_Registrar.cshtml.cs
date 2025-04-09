@@ -46,7 +46,7 @@ namespace ProyectoPanaderia.Pages
                 HttpContext.Session.SetString("UserRole", usuario.Rol);
 
                 // Redirige a la página correcta según el rol
-                return Redirect(usuario.Rol == "admin" ? "/hom  eAdmin" : "/Index");
+                return Redirect(usuario.Rol == "admin" ? "/homeAdmin" : "/Index");
             }
 
             ErrorMessage = "Correo o contraseña incorrectos.";

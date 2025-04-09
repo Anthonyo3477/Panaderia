@@ -71,9 +71,10 @@
                 </ul>
 
                 <div class="tab-content" id="authTabsContent">
+
                     <!-- Login -->
                     <div class="tab-pane fade show active" id="login" role="tabpanel">
-                        <form method="post" asp-controller="Auth" asp-action="Login">
+                        <form method="post" asp-page-handler="Login">
                             <div class="mb-3">
                                 <label for="Email" class="form-label">Correo Electrónico</label>
                                 <input type="email" class="form-control" id="Email" name="Email" required>
@@ -83,16 +84,17 @@
                                 <input type="password" class="form-control" id="Password" name="Password" required>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Ingresar</button>
-                            @if (ViewData["Error"] != null)
-                            {
-                                <div class="alert alert-danger mt-2">@ViewData["Error"]</div>
-                            }
+                                @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                                {
+                                    <div class="alert alert-danger mt-2">@Model.ErrorMessage</div>
+                                }
+
                         </form>
                     </div>
 
                     <!-- Registro -->
                     <div class="tab-pane fade" id="register" role="tabpanel">
-                        <form method="post" asp-controller="Auth" asp-action="Register">
+                        <form method="post" asp-page-handler="Register">
                             <div class="mb-3">
                                 <label for="Name" class="form-label">Nombre Completo</label>
                                 <input type="text" class="form-control" id="Name" name="Name" required>

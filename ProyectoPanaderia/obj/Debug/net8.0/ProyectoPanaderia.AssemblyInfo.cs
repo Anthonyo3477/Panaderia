@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoPanaderia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a843c12a545ec74b0fc33ffdfc20cf5e4197186")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoPanaderia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoPanaderia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
