@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vKxfupW2rx/vS0q9aRHkkhxsD9y9DtFD6WvLClzvy3M=",
+  "Hash": "RML3Fi7tMOTMcM2PO7iOQKs9+AIDsvWKEstq7tsvWJQ=",
   "Source": "ProyectoPanaderia",
   "BasePath": "_content/ProyectoPanaderia",
   "Mode": "Default",
@@ -183,6 +183,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Reposteria.css"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\DataBaseHelper\\DataBaseHelper.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "DataBaseHelper/DataBaseHelper#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i90tcwnlxr",
+      "Integrity": "lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\DataBaseHelper\\DataBaseHelper.cs"
     },
     {
       "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\favicon.ico",
@@ -1422,6 +1443,153 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Admin.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "Modelos/Admin#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ptk4fg5z2z",
+      "Integrity": "k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modelos\\Admin.cs"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Cliente.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "Modelos/Cliente#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mu2qhv2179",
+      "Integrity": "7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modelos\\Cliente.cs"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pan.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "Modelos/Pan#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lyn0q06658",
+      "Integrity": "TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modelos\\Pan.cs"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pasteleria.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "Modelos/Pasteleria#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tmi24ob0w6",
+      "Integrity": "1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modelos\\Pasteleria.cs"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pedido.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "Modelos/Pedido#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ioyhi4pti7",
+      "Integrity": "LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modelos\\Pedido.cs"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\PedidoDetalle.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "Modelos/PedidoDetalle#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i68w5pb5ge",
+      "Integrity": "lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modelos\\PedidoDetalle.cs"
+    },
+    {
+      "Identity": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Producto.cs",
+      "SourceId": "ProyectoPanaderia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\",
+      "BasePath": "_content/ProyectoPanaderia",
+      "RelativePath": "Modelos/Producto#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tmmpfa3ih9",
+      "Integrity": "KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Modelos\\Producto.cs"
     }
   ],
   "Endpoints": [
@@ -1914,6 +2082,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Vw2gvybU3V0Adkqjgp/119jMJOh2klB3cfxCl/shazI="
+        }
+      ]
+    },
+    {
+      "Route": "DataBaseHelper/DataBaseHelper.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\DataBaseHelper\\DataBaseHelper.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:49:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE="
+        }
+      ]
+    },
+    {
+      "Route": "DataBaseHelper/DataBaseHelper.i90tcwnlxr.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\DataBaseHelper\\DataBaseHelper.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:49:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i90tcwnlxr"
+        },
+        {
+          "Name": "label",
+          "Value": "DataBaseHelper/DataBaseHelper.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE="
         }
       ]
     },
@@ -6752,6 +7002,580 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Admin.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Admin.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:26:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Admin.ptk4fg5z2z.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Admin.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:26:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ptk4fg5z2z"
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Admin.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Cliente.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Cliente.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "426"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Cliente.mu2qhv2179.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Cliente.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "426"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mu2qhv2179"
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Cliente.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pan.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pan.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pan.lyn0q06658.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pan.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lyn0q06658"
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Pan.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pasteleria.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pasteleria.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pasteleria.tmi24ob0w6.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pasteleria.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmi24ob0w6"
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Pasteleria.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pedido.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pedido.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:28:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pedido.ioyhi4pti7.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pedido.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:28:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ioyhi4pti7"
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Pedido.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/PedidoDetalle.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\PedidoDetalle.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:14:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/PedidoDetalle.i68w5pb5ge.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\PedidoDetalle.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:14:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i68w5pb5ge"
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/PedidoDetalle.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Producto.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Producto.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Producto.tmmpfa3ih9.cs",
+      "AssetFile": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Producto.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmmpfa3ih9"
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Producto.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0="
         }
       ]
     },

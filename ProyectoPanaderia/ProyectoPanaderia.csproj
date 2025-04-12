@@ -1,21 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a28f04a8-de98-495d-8fbc-c3cb6e0732ee</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\BaseDatos\**" />
+    <Content Remove="wwwroot\BaseDatos\**" />
+    <EmbeddedResource Remove="wwwroot\BaseDatos\**" />
+    <None Remove="wwwroot\BaseDatos\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Remove="wwwroot\css\.editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\baseDataHelper\" />
+    <None Include="wwwroot\css\.editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\.editorconfig" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NuGet.Frameworks" Version="6.13.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
 </Project>

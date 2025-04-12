@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a28f04a8-de98-495d-8fbc-c3cb6e0732ee")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoPanaderia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20d59202669451d9abb8dcf2bd2686b0080421d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1676fce999376d03c6ebc57047f691a41bbfdcf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoPanaderia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoPanaderia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

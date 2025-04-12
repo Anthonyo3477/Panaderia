@@ -4,6 +4,7 @@ wwwroot\css\Index.css
 wwwroot\css\Panaderia.css
 wwwroot\css\Registro.css
 wwwroot\css\Reposteria.css
+wwwroot\DataBaseHelper\DataBaseHelper.cs
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
@@ -63,3 +64,10 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\Modelos\Admin.cs
+wwwroot\Modelos\Cliente.cs
+wwwroot\Modelos\Pan.cs
+wwwroot\Modelos\Pasteleria.cs
+wwwroot\Modelos\Pedido.cs
+wwwroot\Modelos\PedidoDetalle.cs
+wwwroot\Modelos\Producto.cs

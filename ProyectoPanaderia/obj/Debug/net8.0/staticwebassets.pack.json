@@ -5,6 +5,38 @@
       "PackagePath": "staticwebassets\\ProyectoPanaderia.g2rleczh4a.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\DataBaseHelper\\DataBaseHelper.cs",
+      "PackagePath": "staticwebassets\\DataBaseHelper\\DataBaseHelper.cs"
+    },
+    {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Admin.cs",
+      "PackagePath": "staticwebassets\\Modelos\\Admin.cs"
+    },
+    {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Cliente.cs",
+      "PackagePath": "staticwebassets\\Modelos\\Cliente.cs"
+    },
+    {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pan.cs",
+      "PackagePath": "staticwebassets\\Modelos\\Pan.cs"
+    },
+    {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pasteleria.cs",
+      "PackagePath": "staticwebassets\\Modelos\\Pasteleria.cs"
+    },
+    {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Pedido.cs",
+      "PackagePath": "staticwebassets\\Modelos\\Pedido.cs"
+    },
+    {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\PedidoDetalle.cs",
+      "PackagePath": "staticwebassets\\Modelos\\PedidoDetalle.cs"
+    },
+    {
+      "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\Modelos\\Producto.cs",
+      "PackagePath": "staticwebassets\\Modelos\\Producto.cs"
+    },
+    {
       "Id": "C:\\Users\\antho\\source\\repos\\ProyectoPanaderia\\ProyectoPanaderia\\wwwroot\\css\\Carro.css",
       "PackagePath": "staticwebassets\\css\\Carro.css"
     },

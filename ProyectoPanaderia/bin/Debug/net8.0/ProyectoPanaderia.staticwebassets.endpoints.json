@@ -3,6 +3,662 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "DataBaseHelper/DataBaseHelper.cs",
+      "AssetFile": "DataBaseHelper/DataBaseHelper.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:49:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE="
+        }
+      ]
+    },
+    {
+      "Route": "DataBaseHelper/DataBaseHelper.i90tcwnlxr.cs",
+      "AssetFile": "DataBaseHelper/DataBaseHelper.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:49:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i90tcwnlxr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lmIfvH+C0EFHQ3twWUJJZ3P9VRt7+WA1VYnQgRciWoE="
+        },
+        {
+          "Name": "label",
+          "Value": "DataBaseHelper/DataBaseHelper.cs"
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Admin.cs",
+      "AssetFile": "Modelos/Admin.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:26:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Admin.ptk4fg5z2z.cs",
+      "AssetFile": "Modelos/Admin.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:26:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ptk4fg5z2z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k/7FNP/yQb2cW55jE+deSdkqu0JxY0+9RqT7Xjlysl0="
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Admin.cs"
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Cliente.cs",
+      "AssetFile": "Modelos/Cliente.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "426"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Cliente.mu2qhv2179.cs",
+      "AssetFile": "Modelos/Cliente.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "426"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mu2qhv2179"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7n1n5gy0x4dLJI00GTly/M4D5VRozplkKwAzz6YNxwk="
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Cliente.cs"
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pan.cs",
+      "AssetFile": "Modelos/Pan.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pan.lyn0q06658.cs",
+      "AssetFile": "Modelos/Pan.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lyn0q06658"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TbNPn5eGXn8XVDE2T7A+nzQCBJEfKscegcshMuLKN60="
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Pan.cs"
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pasteleria.cs",
+      "AssetFile": "Modelos/Pasteleria.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pasteleria.tmi24ob0w6.cs",
+      "AssetFile": "Modelos/Pasteleria.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "321"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmi24ob0w6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1V7lk2rTyBVcqmSvPmOfXXQN/vqjThpKZsKmWFRPB0U="
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Pasteleria.cs"
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pedido.cs",
+      "AssetFile": "Modelos/Pedido.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:28:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Pedido.ioyhi4pti7.cs",
+      "AssetFile": "Modelos/Pedido.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:28:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ioyhi4pti7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LoRHawsdvP+J3f1mtZR7PbSmiolbSBJ4foLgTQbHAKg="
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Pedido.cs"
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/PedidoDetalle.cs",
+      "AssetFile": "Modelos/PedidoDetalle.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:14:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/PedidoDetalle.i68w5pb5ge.cs",
+      "AssetFile": "Modelos/PedidoDetalle.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:14:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i68w5pb5ge"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lvXJjWJs1LH94IuPCXSHUlwPq2piGuQwOPLbCfLM3zY="
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/PedidoDetalle.cs"
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Producto.cs",
+      "AssetFile": "Modelos/Producto.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0="
+        }
+      ]
+    },
+    {
+      "Route": "Modelos/Producto.tmmpfa3ih9.cs",
+      "AssetFile": "Modelos/Producto.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 22:24:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmmpfa3ih9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KzrAiazOxijkGjCqmG7wOb2UYEQjcrp68QXtKvWJRb0="
+        },
+        {
+          "Name": "label",
+          "Value": "Modelos/Producto.cs"
+        }
+      ]
+    },
+    {
       "Route": "ProyectoPanaderia.g2rleczh4a.styles.css",
       "AssetFile": "ProyectoPanaderia.styles.css",
       "Selectors": [],
