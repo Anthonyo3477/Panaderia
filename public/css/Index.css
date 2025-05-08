@@ -1,0 +1,62 @@
+.text-brown {
+    color: #5e3200;
+}
+
+.bg-brown {
+    background-color: #f8e5b5;
+}
+/* Colores personalizados */
+.text-brown {
+  color: #5e3200 !important;
+}
+
+.bg-brown {
+  background-color: #f8e5b5 !important;
+}
+
+/* Ajustes generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #5e3200;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: black;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.bg-brown {
+  background-color: black;
+  color: black;
+}
+
+/* Botones personalizados */
+.btn-panaderia {
+  background-color: #f7b733;
+  color: white;
+  border: none;
+}
+
+.btn-panaderia:hover {
+  background-color: #e69500;
+  color: white;
+}

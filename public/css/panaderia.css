@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: wheat;
+    color: #333;
+    margin: 0;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: black !important;
+}
+
+.navbar-nav .nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: blue !important;
+}
+
+/* Contenedor principal */
+main.container {
+    max-width: 1200px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Tarjetas */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    flex: 1;
+    max-width: 30%;
+    min-width: 250px;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #d9534f;
+    border-color: #d9534f;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
