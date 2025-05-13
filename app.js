@@ -34,6 +34,11 @@ app.get('/Login_Registrar', (req, res) => {
     res.render('Login_Registrar', { title: 'Iniciar Sesión' });
 });
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Algo salió mal!');
+});
+
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

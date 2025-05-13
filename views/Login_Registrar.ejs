@@ -1,7 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title || "Login/Registro" %>
+    </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Registro.css">
+</head>
+
 <body>
-    <h1>Login Funciona ✅</h1>
-    <a href="/">Volver al inicio</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Panadería</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Panaderia">Panadería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Repositeria">Repostería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Carro">Carro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Login_Registrar">Registro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5">
+        <h1 class="text-center">Bienvenido a la Panadería</h1>
+        <p class="text-center">Inicia sesión o regístrate para continuar.</p>
+
+        <div class="card mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <ul class="nav nav-tabs mb-3" id="authTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login"
+                            type="button" role="tab">
+                            Iniciar Sesión
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register"
+                            type="button" role="tab">
+                            Registrarse
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="authTabsContent">
+
+                    <!-- Login -->
+                    <div class="tab-pane fade show active" id="login" role="tabpanel">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="LoginEmail" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="LoginEmail" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="LoginPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="LoginPassword" name="contraseña"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                        </form>
+                    </div>
+
+                    <!-- Registro -->
+                    <div class="tab-pane fade" id="register" role="tabpanel">
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label for="RegisterName" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="RegisterName" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="RegisterEmail" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="RegisterEmail" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="RegisterPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="RegisterPassword" name="contraseña"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Registrarse</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 fixed-bottom">
+        <p>&copy; <%= new Date().getFullYear() %> - Mi Sitio Web</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts para formularios -->
+    <script>
+        // Login
+        document.getElementById('loginForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById('LoginEmail').value;
+            const contraseña = document.getElementById('LoginPassword').value;
+
+            const res = await fetch('/operadores/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, contraseña })
+            });
+
+            const data = await res.json();
+            if (data.error) {
+                alert("Error: " + data.error);
+            } else {
+                alert("Inicio de sesión exitoso");
+                window.location.href = "/productos";
+            }
+        });
+
+        // Registro
+        document.getElementById('registerForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('RegisterName').value;
+            const email = document.getElementById('RegisterEmail').value;
+            const contraseña = document.getElementById('RegisterPassword').value;
+
+            const res = await fetch('/operadores/registrar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ nombre, email, contraseña })
+            });
+
+            const data = await res.json();
+            if (data.error) {
+                alert("Error: " + data.error);
+            } else {
+                alert("Registro exitoso");
+                window.location.href = "/productos";
+            }
+        });
+    </script>
 </body>
+
 </html>
