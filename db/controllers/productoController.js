@@ -1,78 +1,48 @@
-// db/controllers/productoController.js
-const con = require('../Conexion.js');
-const TABLA = "producto";
-
-
-
-// Insertar nuevo producto
-function insertProducto(data) {
-    return new Promise((resolve, reject) => {
-        const query = `INSERT INTO ${TABLA} SET ?`;
-        con.query(query, data, (err, result) => {
-            if (err) {
-                return reject(err);
-            }
-            resolve(result);
-        });
-    });
-}
-
-// Obtener todos los productos
-function getAllProductos() {
-    return new Promise((resolve, reject) => {
-        const query = `SELECT * FROM ${TABLA}`;
-        con.query(query, (error, result) => {
-            if (error) {
-                return reject(error);
-            }
-            resolve(result);
-        });
-    });
-}
-
-// Obtener producto por ID
-function getProductoById(id) {
-    return new Promise((resolve, reject) => {
-        const query = `SELECT * FROM ${TABLA} WHERE id = ?`;
-        con.query(query, [id], (error, result) => {
-            if (error) {
-                return reject(error);
-            }
-            resolve(result[0]);
-        });
-    });
-}
-
-// Actualizar producto
-function updateProducto(id, data) {
-    return new Promise((resolve, reject) => {
-        const query = `UPDATE ${TABLA} SET ? WHERE id = ?`;
-        con.query(query, [data, id], (error, result) => {
-            if (error) {
-                return reject(error);
-            }
-            resolve(result);
-        });
-    });
-}
-
-// Eliminar producto
-function deleteProducto(id) {
-    return new Promise((resolve, reject) => {
-        const query = `DELETE FROM ${TABLA} WHERE id = ?`;
-        con.query(query, [id], (error, result) => {
-            if (error) {
-                return reject(error);
-            }
-            resolve(result);
-        });
-    });
-}
+const db = require('../Conexion'); // Asegúrate de que tu archivo de conexión esté correctamente exportado
 
 module.exports = {
-    insertProducto,
-    getAllProductos,
-    getProductoById,
-    updateProducto,
-    deleteProducto
+    // Obtener todos los productos
+    getAllProductos: async () => {
+        const [rows] = await db.execute('SELECT * FROM productos');
+        return rows;
+    },
+
+    // Obtener un producto por ID
+    getProductoById: async (id) => {
+        const [rows] = await db.execute('SELECT * FROM productos WHERE id = ?', [id]);
+        return rows;
+    },
+
+    // Insertar producto
+    insertProducto: async (producto) => {
+        const { nombre, clasificacion, descripcion, imagen } = producto;
+        const [result] = await db.execute(
+            'INSERT INTO productos (nombre, clasificacion, descripcion, imagen) VALUES (?, ?, ?, ?)',
+            [nombre, clasificacion, descripcion, imagen]
+        );
+        return result;
+    },
+
+    // Actualizar producto
+    updateProducto: async (id, nombre, clasificacion, descripcion, imagen) => {
+        let query = 'UPDATE productos SET nombre = ?, clasificacion = ?, descripcion = ?';
+        const params = [nombre, clasificacion, descripcion];
+
+        if (imagen) {
+            query += ', imagen = ?';
+            params.push(imagen);
+        }
+
+        query += ' WHERE id = ?';
+        params.push(id);
+
+        const [result] = await db.execute(query, params);
+        return result;
+    },
+
+    // Eliminar producto
+    deleteProducto: async (id) => {
+        const [result] = await db.execute('DELETE FROM productos WHERE id = ?', [id]);
+        return result;
+    }
 };

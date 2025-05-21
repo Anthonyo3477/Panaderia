@@ -2,7 +2,9 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const multer = require('multer');
-const productoController = require('../controllers/productoController');
+const productoController = require('../../db/controllers/productoController');
+
+
 
 // Configuración de multer para carga de imágenes
 const storage = multer.diskStorage({
@@ -41,7 +43,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-// Insertar un nuevo producto
+// 🔧 Insertar un nuevo producto (MODIFICADO)
 router.post('/insert', upload.single('imagen'), async (req, res) => {
     try {
         const { nombre, clasificacion, descripcion } = req.body;
@@ -52,8 +54,10 @@ router.post('/insert', upload.single('imagen'), async (req, res) => {
         }
 
         const producto = { nombre, clasificacion, descripcion, imagen };
-        const result = await productoController.insertProducto(producto);
-        res.status(201).send(result);
+        await productoController.insertProducto(producto);
+
+        // ✅ Redirige al listado de productos después de insertar
+        res.redirect('/producto');
     } catch (error) {
         console.error('Error al insertar producto:', error);
         res.status(500).send('Error al insertar producto');
