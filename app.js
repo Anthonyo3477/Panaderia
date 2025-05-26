@@ -6,6 +6,12 @@ const productoRoutes = require('./routes/api/producto.routes');
 app.use('/producto', productoRoutes);
 
 
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    console.log('Body:', req.body);
+    next();
+});
+
 // Configuración de EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -38,7 +44,6 @@ app.get('/Login_Registrar', (req, res) => {
 app.get('/AgregarProducto', (req, res) => {
     res.render('AgregarProducto', { title: 'Registrar Producto' });
 });
-
 // Manejo de errores
 app.use((err, req, res, next) => {
     console.error(err.stack);

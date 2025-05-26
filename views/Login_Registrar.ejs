@@ -75,21 +75,38 @@
 
                     <!-- Registro -->
                     <div class="tab-pane fade" id="register" role="tabpanel">
-                        <form id="registerForm">
+                        <form id="registerForm" action="/auth/registrar" method="POST">
                             <div class="mb-3">
                                 <label for="RegisterName" class="form-label">Nombre Completo</label>
-                                <input type="text" class="form-control" id="RegisterName" name="nombre" required>
+                                <input type="text" class="form-control" id="RegisterName" name="nombre" required
+                                    value="<%= typeof valores !== 'undefined' ? valores.nombre : '' %>">
                             </div>
                             <div class="mb-3">
                                 <label for="RegisterEmail" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="RegisterEmail" name="email" required>
+                                <input type="email" class="form-control" id="RegisterEmail" name="correo" required
+                                    value="<%= typeof valores !== 'undefined' ? valores.correo : '' %>">
                             </div>
                             <div class="mb-3">
                                 <label for="RegisterPassword" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="RegisterPassword" name="contraseña"
+                                <input type="password" class="form-control" id="RegisterPassword" name="contrasena"
                                     required>
                             </div>
-                            <button type="submit" class="btn btn-success w-100">Registrarse</button>
+                            <div class="mb-3">
+                                <label for="RegisterTelefono" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="RegisterTelefono" name="telefono"
+                                    value="<%= typeof valores !== 'undefined' ? valores.telefono : '' %>">
+                            </div>
+                            <div class="mb-3">
+                                <label for="RegisterDireccion" class="form-label">Dirección</label>
+                                <textarea class="form-control" id="RegisterDireccion" name="direccion"
+                                    rows="2"><%= typeof valores !== 'undefined' ? valores.direccion : '' %></textarea>
+                            </div>
+                            <% if (typeof error !=='undefined' && error) { %>
+                                <div class="alert alert-danger mb-3">
+                                    <%= error %>
+                                </div>
+                                <% } %>
+                                    <button type="submit" class="btn btn-success w-100">Registrarse</button>
                         </form>
                     </div>
 

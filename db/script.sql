@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS producto (
     nombre VARCHAR(100) NOT NULL,
     clasificación VARCHAR(50),
     descripcion TEXT,
-    imagen VARCHAR(255),
     PRIMARY KEY (id)
 );
 

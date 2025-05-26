@@ -38,7 +38,8 @@
                 </h2>
             </div>
             <div class="card-body">
-                <form action="/producto/insert" method="POST" enctype="multipart/form-data">
+                <!-- Cambios principales en el formulario -->
+                <form action="/producto/insert" method="POST">
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="nombre" class="form-label text-brown">Nombre del producto</label>
@@ -46,8 +47,9 @@
                                 placeholder="Ej: Pan Amasado" required />
                         </div>
                         <div class="col-md-6">
-                            <label for="tipo" class="form-label text-brown">Tipo</label>
-                            <select class="form-select" id="tipo" name="tipo" required>
+                            <!-- Cambiado de 'tipo' a 'clasificacion' para coincidir con el backend -->
+                            <label for="clasificacion" class="form-label text-brown">Clasificación</label>
+                            <select class="form-select" id="clasificacion" name="clasificacion" required>
                                 <option value="">Seleccione una categoría</option>
                                 <option value="Pan">Pan</option>
                                 <option value="Torta">Torta</option>
@@ -63,16 +65,18 @@
                             placeholder="Describe el producto..." required></textarea>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="imagen" class="form-label text-brown">Imagen del producto</label>
-                        <input type="file" class="form-control" id="imagen" name="imagen" accept="image/*" />
-                    </div>
+                    <!-- Mensaje de error (opcional) -->
+                    <% if (typeof error !=='undefined' ) { %>
+                        <div class="alert alert-danger mb-3">
+                            <%= error %>
+                        </div>
+                        <% } %>
 
-                    <div class="text-center mt-4">
-                        <button type="submit" class="btn btn-panaderia btn-lg">
-                            <i class="bi bi-check-circle-fill me-2"></i>Guardar Producto
-                        </button>
-                    </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-panaderia btn-lg">
+                                    <i class="bi bi-check-circle-fill me-2"></i>Guardar Producto
+                                </button>
+                            </div>
                 </form>
             </div>
         </div>
