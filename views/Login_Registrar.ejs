@@ -72,7 +72,6 @@
                             <button type="submit" class="btn btn-primary w-100">Ingresar</button>
                         </form>
                     </div>
-
                     <!-- Registro -->
                     <div class="tab-pane fade" id="register" role="tabpanel">
                         <form id="registerForm" action="/auth/registrar" method="POST">
@@ -88,12 +87,13 @@
                             </div>
                             <div class="mb-3">
                                 <label for="RegisterPassword" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="RegisterPassword" name="contrasena"
-                                    required>
+                                <input type="password" autocomplete="new-password" class="form-control"
+                                    id="RegisterPassword" name="contrasena" required>
                             </div>
                             <div class="mb-3">
                                 <label for="RegisterTelefono" class="form-label">Teléfono</label>
                                 <input type="text" class="form-control" id="RegisterTelefono" name="telefono"
+                                    pattern="[0-9]{9,15}" title="Ingrese solo números, entre 9 y 15 dígitos"
                                     value="<%= typeof valores !== 'undefined' ? valores.telefono : '' %>">
                             </div>
                             <div class="mb-3">
@@ -109,6 +109,7 @@
                                     <button type="submit" class="btn btn-success w-100">Registrarse</button>
                         </form>
                     </div>
+
 
                 </div>
             </div>
