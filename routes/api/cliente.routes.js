@@ -1,69 +1,147 @@
-const { Router } = require('express');
-const controller = require('../../db/controllers/clienteController.js');
-const ruta = Router();
+const express = require('express');
+const router = express.Router();
+const clienteController = require('../../db/controllers/clienteController');
 
-// Obtener todos los clientes
-ruta.get("/", async (req, res) => {
+router.use(express.urlencoded({ extended: true }));
+router.use(express.json());
+
+// Formulario para nuevo cliente
+router.get('/nuevo', (req, res) => {
     try {
-        const clientes = await controller.getAll();
-        res.status(200).json(clientes);
+        res.render('nuevo-cliente', {
+            title: 'Registrar Nuevo Cliente'
+        });
     } catch (error) {
-        console.error("Error al obtener los clientes:", error);
-        res.status(500).send("Error del servidor");
+        console.error('Error al renderizar formulario:', error);
+        res.status(500).render('error', { message: 'Error al cargar el formulario' });
     }
 });
 
-// Obtener cliente por ID
-ruta.get("/:id", async (req, res) => {
+// Listar todos los clientes
+router.get('/', async (req, res) => {
     try {
-        const cliente = await controller.getById(req.params.id);
-        if (!cliente) return res.status(404).send("Cliente no encontrado");
-        res.status(200).json(cliente);
+        const clientes = await clienteController.getAllClientes();
+        res.render('clientes', {
+            title: 'Listado de Clientes',
+            clientes
+        });
     } catch (error) {
-        console.error("Error al obtener el cliente:", error);
-        res.status(500).send("Error del servidor");
+        console.error('Error al obtener clientes:', error);
+        res.status(500).render('error', { message: 'Error al cargar los clientes' });
     }
 });
 
-// Insertar un nuevo cliente
-ruta.post("/insert", async (req, res) => {
+// Mostrar detalle de un cliente
+router.get('/:id', async (req, res) => {
     try {
-        const { nombre, correo, contraseña, telefono, direccion } = req.body;
-        if (!nombre || !correo || !contraseña) {
-            return res.status(400).send("Los campos nombre, correo y contraseña son obligatorios");
+        const cliente = await clienteController.getClienteById(req.params.id);
+
+        if (!cliente || cliente.length === 0) {
+            return res.status(404).render('error', { message: 'Cliente no encontrado' });
         }
 
-        const nuevoCliente = { nombre, correo, contraseña, telefono, direccion };
-        const result = await controller.insert(nuevoCliente);
-        res.status(201).json({ mensaje: "Cliente registrado correctamente", resultado: result });
+        res.render('cliente-detalle', {
+            title: cliente[0].nombre,
+            cliente: cliente[0]
+        });
     } catch (error) {
-        console.error("Error al insertar el cliente:", error);
-        res.status(500).send("Error del servidor");
+        console.error('Error al obtener cliente:', error);
+        res.status(500).render('error', { message: 'Error al cargar el cliente' });
     }
 });
 
-// Actualizar un cliente
-ruta.put("/update/:id", async (req, res) => {
+// Procesar nuevo cliente
+router.post('/insert', async (req, res) => {
     try {
-        const id = req.params.id;
-        const result = await controller.update(id, req.body);
-        res.status(200).json({ mensaje: "Cliente actualizado correctamente", resultado: result });
+        const { nombre, correo, contraseña, telefono, direccion } = req.body;
+
+        if (!nombre?.trim() || !correo?.trim() || !contraseña?.trim()) {
+            return res.status(400).render('nuevo-cliente', {
+                error: 'Nombre, correo y contraseña son obligatorios',
+                valores: req.body
+            });
+        }
+
+        const nuevoCliente = {
+            nombre: nombre.trim(),
+            correo: correo.trim(),
+            contraseña: contraseña.trim(),
+            telefono: telefono?.trim() || '',
+            direccion: direccion?.trim() || ''
+        };
+
+        await clienteController.insertCliente(nuevoCliente);
+
+        res.redirect('/cliente');
     } catch (error) {
-        console.error("Error al actualizar el cliente:", error);
-        res.status(500).send("Error del servidor");
+        console.error('Error al crear cliente:', error);
+        res.status(500).render('nuevo-cliente', {
+            error: 'Error al guardar el cliente',
+            valores: req.body
+        });
     }
 });
 
-// Eliminar un cliente
-ruta.delete("/delete/:id", async (req, res) => {
+// Formulario para editar cliente
+router.get('/editar/:id', async (req, res) => {
     try {
-        const id = req.params.id;
-        const result = await controller.remove(id);
-        res.status(200).json({ mensaje: "Cliente eliminado correctamente", resultado: result });
+        const cliente = await clienteController.getClienteById(req.params.id);
+
+        if (!cliente || cliente.length === 0) {
+            return res.status(404).render('error', { message: 'Cliente no encontrado' });
+        }
+
+        res.render('editar-cliente', {
+            title: `Editar ${cliente[0].nombre}`,
+            cliente: cliente[0]
+        });
     } catch (error) {
-        console.error("Error al eliminar el cliente:", error);
-        res.status(500).send("Error del servidor");
+        console.error('Error al cargar formulario de edición:', error);
+        res.status(500).render('error', { message: 'Error al cargar el formulario' });
     }
 });
 
-module.exports = ruta;
+// Procesar actualización de cliente
+router.post('/actualizar/:id', async (req, res) => {
+    try {
+        const { nombre, correo, contraseña, telefono, direccion } = req.body;
+
+        if (!nombre?.trim() || !correo?.trim() || !contraseña?.trim()) {
+            return res.status(400).render('editar-cliente', {
+                error: 'Nombre, correo y contraseña son obligatorios',
+                cliente: { id: req.params.id, ...req.body }
+            });
+        }
+
+        const clienteActualizado = {
+            nombre: nombre.trim(),
+            correo: correo.trim(),
+            contraseña: contraseña.trim(),
+            telefono: telefono?.trim() || '',
+            direccion: direccion?.trim() || ''
+        };
+
+        await clienteController.updateCliente(req.params.id, clienteActualizado);
+
+        res.redirect(`/cliente/${req.params.id}`);
+    } catch (error) {
+        console.error('Error al actualizar cliente:', error);
+        res.status(500).render('editar-cliente', {
+            error: 'Error al actualizar el cliente',
+            cliente: { id: req.params.id, ...req.body }
+        });
+    }
+});
+
+// Eliminar cliente
+router.post('/eliminar/:id', async (req, res) => {
+    try {
+        await clienteController.deleteCliente(req.params.id);
+        res.redirect('/cliente');
+    } catch (error) {
+        console.error('Error al eliminar cliente:', error);
+        res.status(500).render('error', { message: 'Error al eliminar el cliente' });
+    }
+});
+
+module.exports = router;
