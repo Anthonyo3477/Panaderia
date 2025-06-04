@@ -18,7 +18,7 @@ exports.login = (req, res) => {
 
 exports.registrar = (req, res) => {
 
-  // en esta linea hay error con el dato "nombre" ya que me dice qeu es undifind
+  // en esta linea hay error con el dato "nombre" ya que me dice qeu es undifind arregar
   const { nombre, correo, contraseña, telefono, direccion } = req.body;
   db.query('INSERT INTO cliente (nombre, correo, contraseña, telefono, direccion  ) VALUES ( ?, ?, ?, ?, ?)', [ nombre, correo, contraseña, telefono, direccion], (err) => {
     if (err) throw err;
