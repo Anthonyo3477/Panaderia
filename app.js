@@ -3,7 +3,10 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const productoRoutes = require('./routes/api/producto.routes');
+
 app.use('/producto', productoRoutes);
+const rutas = require('./routes/index.js');
+app.use(rutas);
 
 
 app.use((req, res, next) => {
@@ -19,6 +22,7 @@ app.set('views', path.join(__dirname, 'views'));
 // Middlewares
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Rutas principales
 app.get('/', (req, res) => {

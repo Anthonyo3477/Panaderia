@@ -1,4 +1,4 @@
-const conn = require('../db/Conexion');
+const conn = require('../Conexion.js');
 const TABLA = 'admin';
 
 function createAdmin(admin) {

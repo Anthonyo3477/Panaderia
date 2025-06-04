@@ -59,23 +59,22 @@
 
                     <!-- Login -->
                     <div class="tab-pane fade show active" id="login" role="tabpanel">
-                        <form id="loginForm">
+                        <form id="loginForm" method="POST" action="/auth/login">
                             <div class="mb-3">
                                 <label for="LoginEmail" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="LoginEmail" name="email" required>
+                                <input type="email" class="form-control" id="LoginEmail" name="correo" required>
                             </div>
                             <div class="mb-3">
                                 <label for="LoginPassword" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="LoginPassword" name="contraseña"
-                                    required>
+                                <input type="password" class="form-control" id="LoginPassword" name="contrasena" required>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                            <button type="submit" class="btn btn-primary w-100" id="btnLogin">Ingresar</button>
                         </form>
                     </div>
 
                     <!-- Registro -->
                     <div class="tab-pane fade" id="register" role="tabpanel">
-                        <form id="registerForm" action="/auth/registrar" method="POST">
+                       <form id="registerForm" action="/auth/registrar" method="POST">
                             <div class="mb-3">
                                 <label for="RegisterName" class="form-label">Nombre Completo</label>
                                 <input type="text" class="form-control" id="RegisterName" name="nombre" required
@@ -125,48 +124,76 @@
 
     <!-- Scripts para formularios -->
     <script>
-        // Login
-        document.getElementById('loginForm').addEventListener('submit', async function (e) {
+        document.getElementById('btnLogin').addEventListener('click', async function (e) {
             e.preventDefault();
 
-            const email = document.getElementById('LoginEmail').value;
-            const contraseña = document.getElementById('LoginPassword').value;
+            const email = document.getElementById('LoginEmail').value.trim();
+            const contraseña = document.getElementById('LoginContraseña').value.trim();
 
-            const res = await fetch('/operadores/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, contraseña })
-            });
+            if (!email || !contraseña) {
+                alert('Completa ambos campos.');
+                return;
+            }
 
-            const data = await res.json();
-            if (data.error) {
-                alert("Error: " + data.error);
-            } else {
-                alert("Inicio de sesión exitoso");
-                window.location.href = "/productos";
+            try {
+                const res = await fetch('/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, contraseña })
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    alert('Inicio de sesión exitoso.');
+                    window.location.href = '/dashboard'; // o redirige a donde necesites
+                } else {
+                    alert(data.error || 'Credenciales incorrectas.');
+                }
+
+            } catch (err) {
+                console.error(err);
+                alert('Error de conexión.');
             }
         });
 
         // Registro
-        document.getElementById('registerForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
+        document.getElementById('btnRegister').addEventListener('click', async function (e) {
+            e.preventDefault(); // Previene que se envíe el formulario de manera tradicional
 
-            const nombre = document.getElementById('RegisterName').value;
-            const email = document.getElementById('RegisterEmail').value;
-            const contraseña = document.getElementById('RegisterPassword').value;
+            const nombre = document.getElementById('RegisterNombre').value.trim();
+            const email = document.getElementById('RegisterEmail').value.trim();
+            const contraseña = document.getElementById('RegisterContraseña').value.trim();
+            const rol = document.getElementById('RegisterRol').value;
 
-            const res = await fetch('/operadores/registrar', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ nombre, email, contraseña })
-            });
+            if (!nombre || !email || !contraseña || !rol) {
+                alert('Por favor completa todos los campos.');
+                return;
+            }
 
-            const data = await res.json();
-            if (data.error) {
-                alert("Error: " + data.error);
-            } else {
-                alert("Registro exitoso");
-                window.location.href = "/productos";
+            try {
+                const res = await fetch('/operadores/registrar', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nombre, email, contraseña, rol })
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    alert('Registro exitoso. Ahora puedes iniciar sesión.');
+                    // Limpia los campos del formulario
+                    document.getElementById('RegisterNombre').value = '';
+                    document.getElementById('RegisterEmail').value = '';
+                    document.getElementById('RegisterContraseña').value = '';
+                    document.getElementById('RegisterRol').value = '';
+                } else {
+                    alert(data.error || 'Error al registrar.');
+                }
+
+            } catch (err) {
+                console.error(err);
+                alert('Error de conexión con el servidor.');
             }
         });
     </script>

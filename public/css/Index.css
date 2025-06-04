@@ -8,7 +8,8 @@
 }
 
 /* Body */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -24,7 +25,9 @@ main {
 }
 
 /* Títulos */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #5e3200;
 }
 
@@ -58,4 +61,24 @@ footer {
 .btn-panaderia:hover {
   background-color: #e69500;
   color: white;
+}
+/* Estilos existentes para las imágenes del carrusel */
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Nueva clase para ajustar el margen del carrusel */
+.custom-carousel-margin {
+    margin-top: 2rem; /* Reduce el margen superior. Puedes ajustar este valor (ej: 1rem, 0rem, -1rem) */
+    margin-bottom: 3rem; /* Añade un margen inferior para separar del footer, si lo deseas */
+}
+
+/* Colores personalizados (si aún no los tienes, puedes agregarlos) */
+.text-brown {
+    color: #8B4513; /* Un color café para el texto */
+}
+
+.bg-brown {
+    background-color: #D2B48C; /* Un color café claro para el fondo */
 }
