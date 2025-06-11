@@ -2,13 +2,15 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const productoRoutes = require('./routes/api/producto.routes');
 
-app.use('/producto', productoRoutes);
-const rutas = require('./routes/index.js');
-app.use(rutas);
+// Middlewares para interpretar el body antes de las rutas
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
+// Middleware para archivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
 
+// Logger para depurar body y requests
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.url}`);
     console.log('Body:', req.body);
@@ -19,10 +21,12 @@ app.use((req, res, next) => {
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Middlewares
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// Rutas importadas y declaradas
+const productoRoutes = require('./routes/api/producto.routes');
+app.use('/producto', productoRoutes);
+
+const rutas = require('./routes/index.js');
+app.use(rutas);
 
 // Rutas principales
 app.get('/', (req, res) => {
@@ -48,6 +52,7 @@ app.get('/Login_Registrar', (req, res) => {
 app.get('/AgregarProducto', (req, res) => {
     res.render('AgregarProducto', { title: 'Registrar Producto' });
 });
+
 // Manejo de errores
 app.use((err, req, res, next) => {
     console.error(err.stack);

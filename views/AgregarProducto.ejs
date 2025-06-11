@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/css/Index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
         <div class="container">
@@ -29,7 +28,6 @@
             </ul>
         </div>
     </nav>
-
     <main class="container my-5">
         <div class="card shadow-lg border-0">
             <div class="card-header bg-brown text-center">
@@ -58,20 +56,17 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="mb-3">
                         <label for="descripcion" class="form-label text-brown">Descripción</label>
                         <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
                             placeholder="Describe el producto..." required></textarea>
                     </div>
-
                     <!-- Mensaje de error (opcional) -->
                     <% if (typeof error !=='undefined' ) { %>
                         <div class="alert alert-danger mb-3">
                             <%= error %>
                         </div>
                         <% } %>
-
                             <div class="text-center mt-4">
                                 <button type="submit" class="btn btn-panaderia btn-lg">
                                     <i class="bi bi-check-circle-fill me-2"></i>Guardar Producto
@@ -81,7 +76,6 @@
             </div>
         </div>
     </main>
-
     <footer class="bg-brown text-center text-dark mt-5 py-4">
         <div class="container">
             <p class="mb-1">
@@ -90,7 +84,6 @@
             <small>Contacto: contacto@donjuanitoreposteria.cl | Tel: +56 9 84591247</small>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

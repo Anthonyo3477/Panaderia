@@ -5,27 +5,50 @@ exports.mostrarFormularioLogin = (req, res) => {
 };
 
 exports.login = (req, res) => {
-  const { correo, contrasena } = req.body;
-  db.query('SELECT * FROM cliente WHERE correo = ? AND contrasena = ?', [correo, contrasena], (err, resultados) => {
-    if (err) throw err;
-    if (resultados.length > 0) {
-      res.redirect('/');
-    } else {
-      res.send('Credenciales incorrectas');
+  const { correo, contraseña } = req.body;  // Cambié 'contrasena' para evitar la ñ
+
+  if (!correo || !contraseña) {
+    return res.status(400).json({ error: 'Correo y contraseña son obligatorios' });
+  }
+
+  db.query(
+    'SELECT * FROM cliente WHERE correo = ? AND contraseña = ?', // Cambié 'contraseña' a 'contrasena'
+    [correo, contraseña],
+    (err, resultados) => {
+      if (err) {
+        console.error('Error en consulta login:', err);
+        return res.status(500).send('Error al verificar credenciales');
+      }
+      if (resultados.length > 0) {
+        // Login exitoso, renderizar la vista HomeAdmin
+        return res.render('HomeAdmin', { title: 'Home Administrador' });
+      } else {
+        // Credenciales incorrectas
+        return res.status(401).send('Credenciales incorrectas');
+      }
+
     }
-  });
+  );
 };
 
 exports.registrar = (req, res) => {
+  const { nombre, correo, contraseña, telefono, direccion } = req.body; // Consistencia en contrasena
 
-  // en esta linea hay error con el dato "nombre" ya que me dice qeu es undifind arregar
-  const { nombre, correo, contraseña, telefono, direccion } = req.body;
-  db.query('INSERT INTO cliente (nombre, correo, contraseña, telefono, direccion  ) VALUES ( ?, ?, ?, ?, ?)', [ nombre, correo, contraseña, telefono, direccion], (err) => {
-    if (err) throw err;
-    res.redirect('/');
-  });
-  if (!nombre || !correo || !contraseña || !telefono ||!direccion) {
-    return res.status(400).send("Faltan campos del formulario");
+  // Validación de campos obligatorios
+  if (!nombre || !correo || !contraseña || !telefono || !direccion) {
+    return res.status(400).json({ error: 'Faltan campos del formulario' });
   }
-  res.send("Usuario registrado correctamente");
+
+  db.query(
+    'INSERT INTO cliente (nombre, correo, contraseña, telefono, direccion) VALUES (?, ?, ?, ?, ?)', // Cambiado contraseña a contrasena
+    [nombre, correo, contraseña, telefono, direccion],
+    (err) => {
+      if (err) {
+        console.error('Error en la base de datos:', err);
+        return res.status(500).json({ error: 'Error al registrar el usuario' });
+      }
+
+      return res.status(200).json({ mensaje: 'Usuario registrado correctamente' });
+    }
+  );
 };
