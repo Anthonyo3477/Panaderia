@@ -3,16 +3,13 @@ const router = express.Router();
 const productoController = require('../../db/controllers/productoController');
 
 // Middlewares para parsear datos
-router.use(express.urlencoded({ extended: true })); // Para formularios HTML
-router.use(express.json()); // Para API JSON
+router.use(express.urlencoded({ extended: true }));
+router.use(express.json());
 
 // Mostrar formulario de creación
 router.get('/nuevo', (req, res) => {
     try {
-        res.render('nuevo-producto', {
-            title: 'Registrar Nuevo Producto',
-            categorias: ['Pan', 'Torta', 'Pastel', 'Otro']
-        });
+        res.render('AgregarProducto', { title: 'Registrar Nuevo Producto', categorias: ['Pan', 'Torta', 'Pastel', 'Otro']});
     } catch (error) {
         console.error('Error al renderizar formulario:', error);
         res.status(500).render('error', {
@@ -25,15 +22,10 @@ router.get('/nuevo', (req, res) => {
 router.get('/', async (req, res) => {
     try {
         const productos = await productoController.getAllProductos();
-        res.render('panaderia', {
-            title: 'Listado de Productos',
-            productos: productos
-        });
+        res.render('Panaderia', { title: 'Panadería', productos });
     } catch (error) {
         console.error('Error al obtener productos:', error);
-        res.status(500).render('error', {
-            message: 'Error al cargar los productos'
-        });
+        res.status(500).render('error', { message: 'Error al cargar productos' });
     }
 });
 

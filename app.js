@@ -23,7 +23,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Rutas importadas y declaradas
 const productoRoutes = require('./routes/api/producto.routes');
-app.use('/producto', productoRoutes);
+app.use('/Producto', productoRoutes);
+app.use('/Panaderia', productoRoutes);
 
 const rutas = require('./routes/index.js');
 app.use(rutas);
@@ -34,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/Panaderia', (req, res) => {
-    res.render('Panaderia', { title: 'Panadería' });
+    res.render('Panaderia', { title: 'Panadería', productos});
 });
 
 app.get('/Reposteria', (req, res) => {
