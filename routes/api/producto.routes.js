@@ -55,11 +55,11 @@ router.get('/:id', async (req, res) => {
 // Procesar creación de producto
 router.post('/insert', async (req, res) => {
     try {
-        const { nombre, clasificacion, descripcion } = req.body;
+        const { nombre, clasificación, descripcion } = req.body;
 
         // Validación mejorada
-        if (!nombre?.trim() || !clasificacion?.trim() || !descripcion?.trim()) {
-            return res.status(400).render('nuevo-producto', {
+        if (!nombre?.trim() || !clasificación?.trim() || !descripcion?.trim()) {
+            return res.status(400).render('AgregarProducto', {
                 error: 'Todos los campos son obligatorios',
                 valores: req.body,
                 categorias: ['Pan', 'Torta', 'Pastel', 'Otro']
@@ -68,7 +68,7 @@ router.post('/insert', async (req, res) => {
 
         const nuevoProducto = {
             nombre: nombre.trim(),
-            clasificacion: clasificacion.trim(),
+            clasificacion: clasificación.trim(),
             descripcion: descripcion.trim()
         };
 

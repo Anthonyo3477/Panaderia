@@ -32,14 +32,14 @@ async function getProductoById(id) {
 // Función para insertar un nuevo producto
 async function insertProducto(producto) {
     try {
-        const { nombre, clasificacion, descripcion } = producto;
-        if (!nombre || !clasificacion || !descripcion) {
+        const { nombre, clasificación, descripcion } = producto;
+        if (!nombre || !clasificación || !descripcion) {
             throw new Error('Faltan campos obligatorios');
         }
 
         const [result] = await db.execute(
-            'INSERT INTO producto (nombre, clasificacion, descripcion) VALUES (?, ?, ?)',
-            [nombre.trim(), clasificacion.trim(), descripcion.trim()]
+            'INSERT INTO producto (nombre, clasificación, descripcion) VALUES (?, ?, ?)',
+            [nombre.trim(), clasificación.trim(), descripcion.trim()]
         );
 
         return {
@@ -55,14 +55,14 @@ async function insertProducto(producto) {
 // Función para actualizar un producto
 async function updateProducto(id, producto) {
     try {
-        const { nombre, clasificacion, descripcion } = producto;
-        if (!nombre || !clasificacion || !descripcion) {
+        const { nombre, clasificación, descripcion } = producto;
+        if (!nombre || !clasificación || !descripcion) {
             throw new Error('Faltan campos obligatorios');
         }
 
         const [result] = await db.execute(
-            'UPDATE producto SET nombre = ?, clasificacion = ?, descripcion = ? WHERE id = ?',
-            [nombre.trim(), clasificacion.trim(), descripcion.trim(), id]
+            'UPDATE producto SET nombre = ?, clasificación = ?, descripcion = ? WHERE id = ?',
+            [nombre.trim(), clasificación.trim(), descripcion.trim(), id]
         );
 
         if (result.affectedRows === 0) {
@@ -105,7 +105,7 @@ async function deleteProducto(id) {
 async function getProductosPorClasificacion(clasificacion) {
     try {
         const [rows] = await db.execute(
-            'SELECT * FROM producto WHERE clasificacion = ? ORDER BY nombre',
+            'SELECT * FROM producto WHERE clasificación = ? ORDER BY nombre',
             [clasificacion]
         );
         return rows;
